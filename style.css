@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff4ee;
+  font-family: "poppins";
+}
+.navbar-brand img {
+  filter: drop-shadow(2px 2px 3px #666666);
+}
+.nav-item {
+  padding: 1rem;
+}
+.nav-link {
+  color: #884a39;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.active {
+  color: #884a39 !important;
+  border-bottom: 3px solid #c38154;
+}
+.nav-link:hover {
+  color: #c38154;
+}
+.main-content {
+  /* background-image: url(img/asdasd.png); */
+  background-image: url(img/0.3.png);
+  background-size: cover;
+  height: 80vh;
+}
+h1 {
+  color: #482121;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-size: 3.5rem;
+}
+p {
+  color: #000;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+.img-content {
+  width: 100%;
+}
+
+svg {
+  position: relative;
+  margin-top: -100px;
+}
+
+.mybtn {
+  background-color: #482121;
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: #884a39;
+  z-index: 99;
+  position: relative;
+}
+
+.sosial-media a {
+  margin: 0.3rem;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.sosial-media a:hover {
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.end {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  svg {
+    margin-top: -50px;
+  }
+  footer {
+    margin-top: 0;
+    background-color: #884a39;
+  }
+  .main-content {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .nav-item {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-link {
+    width: 30vw;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .img-content {
+    width: 50%;
+  }
+  .main-content {
+    height: 80vh;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .mybtn {
+    margin-bottom: 1rem;
+  }
+  .content {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .main-content {
+    height: 100%;
+  }
+  svg {
+    margin-top: 70px;
+  }
+}
