@@ -1,0 +1,42 @@
+.main-container {
+  margin-bottom: 1rem;
+}
+.main-container .image {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.main-container h1 {
+  color: #482121;
+}
+.main-container p {
+  color: #482121;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.card {
+  background-color: transparent;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 990px) {
+  .card img {
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card img {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main-container p {
+    font-size: 1rem;
+  }
+}

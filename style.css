@@ -3,12 +3,20 @@ body {
   padding: 0;
   background-color: #fff4ee;
   font-family: "poppins";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+main {
+  flex: 1;
+}
+
 .navbar-brand img {
   filter: drop-shadow(2px 2px 3px #666666);
 }
 .nav-item {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .nav-link {
   color: #884a39;
@@ -22,29 +30,44 @@ body {
 .nav-link:hover {
   color: #c38154;
 }
-.main-content {
-  /* background-image: url(img/asdasd.png); */
+.content-bg {
   background-image: url(img/0.3.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 80vh;
+  width: 100%;
 }
-h1 {
+
+.content-bg img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 100%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+svg {
+  height: fit-content;
+  margin-top: -300px;
+}
+
+.bg {
+  background-color: #884a39;
+}
+
+.content-bg h1 {
   color: #482121;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   font-size: 3.5rem;
 }
-p {
+.content-bg p {
   color: #000;
   font-size: 1.3rem;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
 }
 .img-content {
   width: 100%;
-}
-
-svg {
-  position: relative;
-  margin-top: -100px;
 }
 
 .mybtn {
@@ -54,13 +77,26 @@ svg {
   padding: 0.5rem 1rem;
 }
 
-footer {
+.product img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.product p {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.footer {
   display: flex;
-  justify-content: center;
   width: 100vw;
   background-color: #884a39;
-  z-index: 99;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 1rem;
 }
 
 .sosial-media a {
@@ -75,26 +111,31 @@ footer {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
-.end {
-  font-size: 1rem;
-}
-
 @media only screen and (max-width: 1300px) {
-  h1 {
-    font-size: 2.5rem;
+  .content-bg img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   }
-  p {
-    font-size: 1.1rem;
+  .content-bg h1 {
+    font-size: 3rem;
   }
+  .content-bg p {
+    font-size: 1.2rem;
+  }
+
   svg {
-    margin-top: -50px;
+    margin-top: -250px;
   }
+  .bg {
+    margin-top: -30px;
+  }
+
   footer {
     margin-top: 0;
     background-color: #884a39;
-  }
-  .main-content {
-    height: 100%;
   }
 }
 @media only screen and (max-width: 990px) {
@@ -107,21 +148,58 @@ footer {
     width: 30vw;
     text-align: center;
   }
+  .content-bg h1 {
+    font-size: 2rem;
+  }
+  .content-bg p {
+    font-size: 1.1rem;
+  }
+  .content-bg img {
+    width: 300px;
+    height: 300px;
+  }
+  .bg h1 {
+    font-size: 2rem;
+  }
+  .product p {
+    font-size: 1.1rem;
+  }
+  svg {
+    margin-top: -400px;
+  }
+  .bg {
+    margin-top: -135px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  .img-content {
-    width: 50%;
+  .content-bg {
+    height: 90vh;
   }
-  .main-content {
-    height: 80vh;
+  .content-bg h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
   }
-  h1 {
-    font-size: 2rem;
-  }
-  p {
+  .content-bg p {
     font-size: 1rem;
   }
+  .bg h1 {
+    font-size: 1.3rem;
+  }
+  .product {
+    margin-top: 1rem;
+  }
+  .product p {
+    margin-top: 1rem;
+  }
+  svg {
+    margin-top: -100px;
+    height: 100%;
+  }
+  .bg {
+    margin-top: -20px;
+  }
+
   .mybtn {
     margin-bottom: 1rem;
   }
@@ -130,13 +208,22 @@ footer {
   }
 }
 @media only screen and (max-width: 400px) {
-  h1 {
-    font-size: 1.2rem;
+  .content-bg {
+    height: 100vh;
   }
-  .main-content {
-    height: 100%;
+  .content-bg img {
+    width: 200px;
+    height: 200px;
   }
   svg {
-    margin-top: 70px;
+    margin-top: -250px;
+  }
+  .bg {
+    margin-top: -100px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .bg {
+    margin-top: -110px;
   }
 }
