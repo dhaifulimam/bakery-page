@@ -13,6 +13,41 @@ h1 {
 .card-title {
   color: #482121;
 }
+.kategori {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.kategori h1 {
+  color: #482121;
+}
+.kategori ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-top: 1rem;
+}
+.kategori ul li {
+  margin: 1rem 0 1rem 0;
+}
+.kategori ul a {
+  text-decoration: none;
+  color: #482121;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.kategori ul .point {
+  background-color: #884a39;
+  border-radius: 1rem 0.3rem 1rem 0.3rem;
+  padding: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.kategori ul .point a {
+  color: white;
+}
+
 @media only screen and (max-width: 990px) {
   .card img {
     height: 150px;

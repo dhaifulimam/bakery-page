@@ -75,6 +75,13 @@ svg {
   color: #fff;
   border-radius: 1.5rem;
   padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+}
+.mybtn:hover {
+  background-color: #2d1c1c;
+  color: #fff;
 }
 
 .product img {
@@ -91,7 +98,7 @@ svg {
 
 .footer {
   display: flex;
-  width: 100vw;
+  width: 100%;
   background-color: #884a39;
   justify-content: center;
   align-items: center;
